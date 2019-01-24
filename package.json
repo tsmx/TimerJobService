@@ -1,0 +1,14 @@
+{
+  "name": "timerjobservice",
+  "version": "1.0.0",
+  "description": "A generic service for executing and maintaining scheduled timer jobs.",
+  "main": "service.js",
+  "author": "Sebastian Stricker",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.6.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.4",
+    "winston": "^3.1.0"
+  }
+}
