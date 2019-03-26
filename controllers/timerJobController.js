@@ -1,6 +1,7 @@
 var cron = require('cron');
 var logger = require('../utils/logging').logger;
 var timerJob = require('../models/timerJobBaseModel').timerJob;
+var timerJobLogEntry = require('../models/timerJobBaseModel').timerJobLogEntry;
 var jobs = new Map();
 
 function executeConsole(message) {
@@ -9,6 +10,8 @@ function executeConsole(message) {
 
 function executeConsole2(message) {
     logger.info('executeConsole2 - ' + message);
+    var logEntry = new timerJobLogEntry({ job: "TestJob", message: message });
+    logEntry.save();
 }
 
 function generateCronJob(cronexp, type, options) {

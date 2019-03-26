@@ -2,10 +2,7 @@ var mongoose = require('../utils/db.js');
 
 // schema for basic timerjob data
 var timerJob = mongoose.Schema({
-	name: {
-		type: String,
-		unique: true,
-	},
+	name: { type: String, unique: true },
 	cron: String,
 	type: String,
 	options: mongoose.Schema.Types.Mixed,
@@ -13,9 +10,9 @@ var timerJob = mongoose.Schema({
 });
 
 // schema for log entry data
-var timerJobLogEntry = mongoose.Schema ({
+var timerJobLogEntry = mongoose.Schema({
 	job: String,
-	date: Date,
+	date: { type: Date, default: Date.now },
 	message: String
 });
 
