@@ -6,9 +6,9 @@
   "author": "Sebastian Stricker",
   "license": "ISC",
   "dependencies": {
-    "cron": "^1.6.0",
-    "express": "^4.16.4",
-    "mongoose": "^5.4.4",
-    "winston": "^3.1.0"
+    "cron": "^1.7.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.11",
+    "winston": "^3.2.1"
   }
 }
