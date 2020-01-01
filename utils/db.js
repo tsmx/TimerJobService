@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var dbURI = 'mongodb://mongoservice:27017/timerJobService';
 
 // Create the database connection 
-mongoose.connect(dbURI, { useNewUrlParser: true });
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.set('useCreateIndex', true);
 
 // CONNECTION EVENTS
