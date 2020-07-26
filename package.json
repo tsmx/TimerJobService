@@ -6,7 +6,7 @@
   "author": "Sebastian Stricker",
   "license": "ISC",
   "dependencies": {
-    "lodash": ">=4.17.13",
+    "lodash": ">=4.17.19",
     "cron": "^1.7.1",
     "express": "^4.17.1",
     "mongoose": "^5.7.5",
