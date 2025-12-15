@@ -5,6 +5,9 @@
   "main": "service.js",
   "author": "Sebastian Stricker",
   "license": "ISC",
+  "scripts": {
+    "test": "true"
+  },
   "dependencies": {
     "cron": "^1.7.1",
     "express": "^4.17.1",
